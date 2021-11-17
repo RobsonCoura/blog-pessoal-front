@@ -1,0 +1,714 @@
+_type: export
+__export_format: 4
+__export_date: 2021-11-17T23:07:31.230Z
+__export_source: insomnia.desktop.app:v2021.6.0
+resources:
+  - _id: req_64ac568da82a47bd89ca1bcff1234d3b
+    parentId: fld_ddeadfc8fe4244808f8f248fbe6a83de
+    modified: 1637170901489
+    created: 1637170856295
+    url: localhost:8080/postagens
+    name: Get Postagens
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_835d3a1488994a238b0ab0680eae5acd
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637170856295
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_ddeadfc8fe4244808f8f248fbe6a83de
+    parentId: wrk_912d6bf906d84eac931372ccbabbe73e
+    modified: 1637169153082
+    created: 1637169153082
+    name: 03 - Postagens
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1637169153082
+    _type: request_group
+  - _id: wrk_912d6bf906d84eac931372ccbabbe73e
+    parentId: null
+    modified: 1637167710320
+    created: 1637167710320
+    name: Blog Pessoal
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_8efffbfcb3bd4f529b6d4880280d8b09
+    parentId: fld_ddeadfc8fe4244808f8f248fbe6a83de
+    modified: 1637170969902
+    created: 1637170936307
+    url: localhost:8080/postagens/1
+    name: Get Postagens By_Id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_835d3a1488994a238b0ab0680eae5acd
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637170466659
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7fb36beb84064aab80474946d422855c
+    parentId: fld_ddeadfc8fe4244808f8f248fbe6a83de
+    modified: 1637171037760
+    created: 1637170951457
+    url: localhost:8080/postagens/titulo/Lo
+    name: Get Postagens By_Titulo
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_835d3a1488994a238b0ab0680eae5acd
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637170271841
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_01e95186c3384779a528e952e3419bb9
+    parentId: fld_ddeadfc8fe4244808f8f248fbe6a83de
+    modified: 1637170564507
+    created: 1637170077023
+    url: localhost:8080/postagens
+    name: Post Postagem 01
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"titulo": "Criando classes em java",
+        	"texto": "Como a maioria das atividades que fazemos no dia a dia, programar também possui modos diferentes de se fazer. Esses modos são chamados de paradigmas de programação e, entre eles, estão a programação orientada a objetos (POO) e a programação estruturada. Quando começamos a utilizar linguagens como Java, C#, Python e outras que possibilitam o paradigma orientado a objetos, é comum errarmos e aplicarmos a programação estruturada achando que estamos usando recursos da orientação a objetos.",
+        	"tema": {
+        		"id": 1
+        	},
+        	"usuario":{
+        		"idUsuario": 1 
+        	}
+        }
+    parameters: []
+    headers:
+      - id: pair_c3a7956883044dc5b7933de6c9da01b6
+        name: Content-Type
+        value: application/json
+        description: ""
+      - name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        id: pair_e39383cf38674057937004564aed4731
+      - id: pair_97bb155ed60042cd8ff28287b9006e7d
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1637170077023
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e40e6329170742a9850ef068b30f55ec
+    parentId: fld_ddeadfc8fe4244808f8f248fbe6a83de
+    modified: 1637171113642
+    created: 1637170584742
+    url: localhost:8080/postagens
+    name: Post Postagem 02
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"titulo": "Estrutura De Logica de Programação",
+        	"texto": "Um algoritmo é representado através de expressões simbólicas de modo a descrever e a encontrar a solução de problemas do mundo real. ... As estruturas de dados representam de modo simbólico entidades e objectos do mundo real e definem a parte estática de um algoritmo.",
+        	"tema": {
+        		"id": 2
+        	},
+        	"usuario":{
+        		"idUsuario": 2 
+        	}
+        }
+    parameters: []
+    headers:
+      - id: pair_c3a7956883044dc5b7933de6c9da01b6
+        name: Content-Type
+        value: application/json
+        description: ""
+      - name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        id: pair_e39383cf38674057937004564aed4731
+      - id: pair_97bb155ed60042cd8ff28287b9006e7d
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1637169840056.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_124dc67d39eb4cd6aab579d4abc2bbc1
+    parentId: fld_ddeadfc8fe4244808f8f248fbe6a83de
+    modified: 1637170813604
+    created: 1637170740301
+    url: localhost:8080/postagens
+    name: Put Postagem 02
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: >-
+        { 
+        	"id": 2,
+        	"titulo": "Logica de Programação",
+        	"texto": "Um algoritmo é representado através de expressões simbólicas de modo a descrever e a encontrar a solução de problemas do mundo real. ... As estruturas de dados representam de modo simbólico entidades e objectos do mundo real e definem a parte estática de um algoritmo.",
+        	"tema": {
+        		"id": 2
+        	},
+        	"usuario":{
+        		"idUsuario": 2 
+        	}
+        }
+    parameters: []
+    headers:
+      - id: pair_c3a7956883044dc5b7933de6c9da01b6
+        name: Content-Type
+        value: application/json
+        description: ""
+      - name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        id: pair_e39383cf38674057937004564aed4731
+      - id: pair_97bb155ed60042cd8ff28287b9006e7d
+        name: ""
+        value: ""
+        description: ""
+    authentication: {}
+    metaSortKey: -1637169721573.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_211ee9a14c724a42bc2c53be4893f25c
+    parentId: fld_ddeadfc8fe4244808f8f248fbe6a83de
+    modified: 1637171206878
+    created: 1637171086200
+    url: localhost:8080/postagens/3
+    name: Delete Postagens By_Id
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_835d3a1488994a238b0ab0680eae5acd
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637169721523.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_70c863e33a804e7cbfe7105be604d04b
+    parentId: fld_8f45545eda2e478c9992ce0852d7ec07
+    modified: 1637170882333
+    created: 1637169603090
+    url: localhost:8080/tema
+    name: Get Temas
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_33a13053923c40c09e8f1e6abca818f0
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637169603090
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_8f45545eda2e478c9992ce0852d7ec07
+    parentId: wrk_912d6bf906d84eac931372ccbabbe73e
+    modified: 1637169138823
+    created: 1637169138823
+    name: 02 - Temas
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1637169138823
+    _type: request_group
+  - _id: req_52a27bb2601e4d3ebb957df5811ba11f
+    parentId: fld_8f45545eda2e478c9992ce0852d7ec07
+    modified: 1637169729755
+    created: 1637169674903
+    url: localhost:8080/tema/1
+    name: Get Temas ById
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_33a13053923c40c09e8f1e6abca818f0
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637169390386
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ebe1867fd7d0421caed0ada7e9fcacd2
+    parentId: fld_8f45545eda2e478c9992ce0852d7ec07
+    modified: 1637170092606
+    created: 1637169816781
+    url: localhost:8080/tema/nome/dados
+    name: Get Temas By_Descricao
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_33a13053923c40c09e8f1e6abca818f0
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637169284034
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1b3937638bc34f4e9fc5574fea931b56
+    parentId: fld_8f45545eda2e478c9992ce0852d7ec07
+    modified: 1637170080066
+    created: 1637169177682
+    url: localhost:8080/tema
+    name: Post Tema 01
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"descricao": "Programação Orientada a Objetos"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_3fd990d27bb948f186bdf25d48faa40e
+      - id: pair_5546c07057ca44e28b2223ab0349c116
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637169177682
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_fb80943d32e44986afd7f22b301dc140
+    parentId: fld_8f45545eda2e478c9992ce0852d7ec07
+    modified: 1637169466357
+    created: 1637169438027
+    url: localhost:8080/tema
+    name: Post Tema 02
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"descricao": "Algoritmos"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_3fd990d27bb948f186bdf25d48faa40e
+      - id: pair_5546c07057ca44e28b2223ab0349c116
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637169001373.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a4beb44e8e014cd0aff22f1eeae8642c
+    parentId: fld_8f45545eda2e478c9992ce0852d7ec07
+    modified: 1637169544919
+    created: 1637169484991
+    url: localhost:8080/tema
+    name: Post Tema 03
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"descricao": "Laços de Repetição"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_3fd990d27bb948f186bdf25d48faa40e
+      - id: pair_5546c07057ca44e28b2223ab0349c116
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637168913219.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8d143e3e86b545fc8eb410ea07e56be8
+    parentId: fld_8f45545eda2e478c9992ce0852d7ec07
+    modified: 1637169643824
+    created: 1637169533330
+    url: localhost:8080/tema
+    name: Put Tema 03
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id": 3,
+        	"descricao": "Banco de Dados"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_3fd990d27bb948f186bdf25d48faa40e
+      - id: pair_5546c07057ca44e28b2223ab0349c116
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637168869142.125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0e3b5ba02bbc4258a01be3d80b8b820b
+    parentId: fld_8f45545eda2e478c9992ce0852d7ec07
+    modified: 1637170029859
+    created: 1637169929038
+    url: localhost:8080/tema/3
+    name: "Delete Temas "
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_33a13053923c40c09e8f1e6abca818f0
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637168869092.125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cf11b55ad895412080cb90e5fce7ccb5
+    parentId: fld_c84765bf9dca431fbf91d498032c8801
+    modified: 1637178305297
+    created: 1637167734086
+    url: localhost:8080/usuarios/cadastrar
+    name: Post Cadastrar Usuario
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome": "Robson Coura",
+        	"usuario":"robson001@email.com.br",
+        	"senha": "12345678"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_ba70b71984da45668eecfaedb81d7fb0
+    authentication: {}
+    metaSortKey: -1637168825065
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_c84765bf9dca431fbf91d498032c8801
+    parentId: wrk_912d6bf906d84eac931372ccbabbe73e
+    modified: 1637168825015
+    created: 1637168825015
+    name: 01 - Usuarios
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1637168825015
+    _type: request_group
+  - _id: req_f239da27f9e14261b926c4d00e95b039
+    parentId: fld_c84765bf9dca431fbf91d498032c8801
+    modified: 1637169085759
+    created: 1637168017173
+    url: localhost:8080/usuarios/logar
+    name: Post Logar Usuario
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	
+        	"usuario":"robson001@email.com.br",
+        	"senha": "12345678"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_ba70b71984da45668eecfaedb81d7fb0
+    authentication: {}
+    metaSortKey: -1637168825052.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bce056e7ef97450c8d8b88e5ff4d471b
+    parentId: fld_c84765bf9dca431fbf91d498032c8801
+    modified: 1637169028389
+    created: 1637168080252
+    url: localhost:8080/usuarios/all
+    name: Get Usuarios
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_ccbe567c7fdb4b57ae00e6211fc1464a
+        name: Authorization
+        value: Basic cm9ic29uMDAxQGVtYWlsLmNvbS5icjoxMjM0NTY3OA==
+        description: ""
+    authentication: {}
+    metaSortKey: -1637168825040
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_de00d2aedba44b0c9eb30e6706dca60c
+    parentId: fld_c84765bf9dca431fbf91d498032c8801
+    modified: 1637169631475
+    created: 1637168167559
+    url: localhost:8080/usuarios/atualizar
+    name: Put Atualizar Usuarios
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {  
+        	"idUsuario": 2,
+        	"nome": "Robson Monteiro",
+        	"usuario":"robson1020@email.com.br",
+        	"senha": "12345678"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_ba70b71984da45668eecfaedb81d7fb0
+      - id: pair_b687ebafc30246bab0fee1fc85ddfc75
+        name: Authorization
+        value: Basic cm9ic29uMDAxQGVtYWlsLmNvbS5icjoxMjM0NTY3OA==
+        description: ""
+    authentication: {}
+    metaSortKey: -1637168825027.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a6a1c32dc4d243f79085cc82361ea4f4
+    parentId: fld_c84765bf9dca431fbf91d498032c8801
+    modified: 1637169036019
+    created: 1637168434872
+    url: localhost:8080/usuarios/logar
+    name: Post Logar Usuario Depois De Atualizar
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {  
+
+        	"usuario":"robson1020@email.com.br",
+        	"senha": "12345678"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_ba70b71984da45668eecfaedb81d7fb0
+    authentication: {}
+    metaSortKey: -1637168825021.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8a586caebc484681ad12d3c1b1b1fbff
+    parentId: fld_c84765bf9dca431fbf91d498032c8801
+    modified: 1637169390757
+    created: 1637168409809
+    url: localhost:8080/usuarios/all
+    name: Get Usuarios Depois De Atualizar
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - id: pair_ccbe567c7fdb4b57ae00e6211fc1464a
+        name: Authorization
+        value: Basic cm9ic29uMTAyMEBlbWFpbC5jb20uYnI6MTIzNDU2Nzg=
+        description: ""
+    authentication: {}
+    metaSortKey: -1637168825018.125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_12d11a29283570f62daf828fd6cad1a70943ae52
+    parentId: wrk_912d6bf906d84eac931372ccbabbe73e
+    modified: 1637167710354
+    created: 1637167710354
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1637167710354
+    _type: environment
+  - _id: jar_12d11a29283570f62daf828fd6cad1a70943ae52
+    parentId: wrk_912d6bf906d84eac931372ccbabbe73e
+    modified: 1637167710368
+    created: 1637167710368
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_0cb3f69c5e2345cfbd5511b3154f6133
+    parentId: wrk_912d6bf906d84eac931372ccbabbe73e
+    modified: 1637167710337
+    created: 1637167710337
+    fileName: Blog Pessoal
+    contents: ""
+    contentType: yaml
+    _type: api_spec
